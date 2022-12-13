@@ -21,14 +21,6 @@ const client = useSupabaseAuthClient();
 
 const logout = async () => {
   await client.auth.signOut();
-
-  // const { error } = await client.auth.signOut();
-  // if (error) {
-  //   console.log("something went wrong");
-  // } else {
-  //   console.log("user logout, redirect to login page");
-  //   navigateTo("/");
-  // }
 };
 
 </script>

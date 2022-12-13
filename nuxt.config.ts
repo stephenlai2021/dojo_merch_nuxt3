@@ -14,6 +14,8 @@ export default defineNuxtConfig({
     }
   },
   runtimeConfig: {
-    currencyKey: process.env.CURRENCY_API_KEY
+    currencyKey: process.env.CURRENCY_API_KEY,
+    supabaseUrl: process.env.SUPABASE_URL,
+    supabaseKey: process.env.SUPABASE_KEY
   }
 })

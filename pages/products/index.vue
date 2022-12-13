@@ -10,7 +10,7 @@
 
 <script setup>
 definePageMeta({
-  middleware: ["auth"], // check user status when page refreshed
+  middleware: ["auth"], // protect route on server
 });
 
 definePageMeta({
@@ -23,7 +23,12 @@ useHead({
 });
 
 const { data: products } = await useFetch("https://fakestoreapi.com/products");
-// console.log("products: ", products);
+// const { data: products } = await useFetch("data.json");
+console.log("products: ", products);
+
+// fetch('data.json')
+// .then(res => res.json())
+// .then(json => console.log(json))
 
 const user = useSupabaseUser();
 watchEffect(() => {
