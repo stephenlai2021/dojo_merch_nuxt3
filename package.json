@@ -6,7 +6,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "push": "git add . && git commit -m commit && git git push -u origin master"
+    "push": "git add . && git commit -m commit && git push -u origin master"
   },
   "devDependencies": {
     "nuxt": "3.0.0"
